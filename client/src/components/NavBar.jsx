@@ -32,7 +32,7 @@ export const NavBar = () => {
                 <Button variant='outline-light'>Админ панель</Button>
               </NavLink>
               <NavLink to={LOGIN_ROUTE}>
-                <Button onClick={() => dispatch(setIsAuth(true))} variant='outline-light'>Авторизация</Button>
+                <Button variant='outline-light'>Авторизация</Button>
               </NavLink>
             </Nav>
           }

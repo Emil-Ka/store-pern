@@ -7,17 +7,17 @@ import {Shop} from '../pages/Shop';
 
 export const AppRouter = () => {
   const {isAuth} = useSelector(state => state.user);
-  console.log(isAuth);
+  console.log('isAuth ', isAuth);
 
   return (
     <Routes>
       {
-        isAuth && authRoutes.map(({path, component}) => 
+        publicRoutes.map(({path, component}) => 
           <Route key={path} path={path} element={component()}/>
         )
       }
       {
-        publicRoutes.map(({path, component}) => 
+        isAuth && authRoutes.map(({path, component}) => 
           <Route key={path} path={path} element={component()}/>
         )
       }

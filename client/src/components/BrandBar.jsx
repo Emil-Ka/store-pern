@@ -6,7 +6,6 @@ import {setSelectedBrand} from '../redux/slices/brandSlice';
 export const BrandBar = () => {
   const dispatch = useDispatch();
   const {brands, selectedBrand} = useSelector(state => state.brand);
-  console.log(brands, selectedBrand);
 
   return (
     <div className='d-flex'>

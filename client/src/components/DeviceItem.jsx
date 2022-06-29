@@ -7,9 +7,6 @@ import star from '../assets/icon/star.svg';
 import {DEVICE_ROUTE} from '../utils/constants';
 
 export const DeviceItem = ({device}) => {
-  const history = createBrowserHistory();
-  console.log(history);
-
   return (
     <Col md={3}>
       <NavLink to={DEVICE_ROUTE + '/' + device.id}>

@@ -12,7 +12,7 @@ const userSlice = createSlice({
     setIsAuth: (state, action) => {
       state.isAuth = action.payload;
     },
-    setIsUser: (state, action) => {
+    setUser: (state, action) => {
       state.user = action.payload;
     }
   }
@@ -21,4 +21,4 @@ const userSlice = createSlice({
 const {actions, reducer} = userSlice;
 
 export default reducer;
-export const {setIsAuth, setIsUser} = actions;
+export const {setIsAuth, setUser} = actions;
